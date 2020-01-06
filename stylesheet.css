@@ -1,0 +1,90 @@
+button{
+  background-color: #ddd;
+  border: 1px solid darkgrey;
+
+
+}
+
+.icon:before, .label {
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.editor {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  padding: 5px 2px;
+  margin-top: 3px;
+  border-radius: 7px;
+}
+.editor:hover{
+    background-color:#f5f5f5;
+    border: 2px solid #999;
+}
+.editor:focus{
+    background-color:#f5f5f5;
+    border: 2px solid #111;
+ }
+
+ .test {
+   border: 2px solid red;
+ }
+ .menu {
+ }
+
+ .edit_menu {
+   display: inline-block;
+
+ }
+
+ .text_field {
+   border: 2px dotted darkgrey;
+   margin: 4px;
+ }
+
+ .img_field{
+   width: fit-content;
+   margin: auto;
+ }
+
+ .addimg {
+     border: none;
+     background-color: transparent;
+     cursor: pointer;
+     display: none;
+     float: none;
+     width: 40px;
+     height: 40px;
+     line-height: 40px;
+ }
+
+ .upload_label {
+   background-color: #ddd;
+   border: 1px solid darkgrey;
+   width: 28px;
+   height: 24px;
+ }
+
+ .text_field:hover {
+   border: 2px solid darkgrey;
+ }
+
+.add{
+  margin-top: 3px;
+}
+.add_menu {
+  display: inline-block;
+}
+.app_container{
+  width: 80%;
+  margin: auto;
+}
+
+.add_menu_display{
+  display: none;
+}
+
+.add_menu:hover .add_menu_display{
+  display: inline-block;
+}

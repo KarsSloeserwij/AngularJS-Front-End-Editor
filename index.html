@@ -1,0 +1,40 @@
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="stylesheet.css">
+
+<div class='app_container' ng-app='BlogyApp'>
+  <div ng-controller='BlogyEditorController'>
+      <input type="file" id="file_input" style="display:none;" />
+      <div class="add_menu">
+        <button class="add"><i style="font-size:16px" class="fas fa-plus"></i></button>
+        <div class="add_menu_display">
+          <button ng-click="addTextField()" class="edit"><i style="font-size:16px" class="fas fa-paragraph"></i></button>
+          <button type="button" ng-click="addImgField()">
+            <i style="font-size:16px" class="fas fa-image"></i>
+          </button>
+        </div>
+      </div>
+      <div ng-repeat="x in elementArray">
+        <div class="editor">
+          <div>
+            <div class="{[{ x.class }]}" ng-attr-contenteditable="{[{x.editor}]}" ng-bind-html="x.html"></div>
+          </div>
+          <div class="menu">
+            <button ng-click="moveUp(x)" class="edit"><i style="font-size:16px" class="fas fa-arrow-up"></i></button>
+            <button ng-click="moveDown(x)" class="edit"><i style="font-size:16px" class="fas fa-arrow-down"></i></button>
+          </div>
+        </div>
+        <div class="add_menu">
+          <button class="add"><i style="font-size:12px" class="fas fa-plus"></i></button>
+          <div class="add_menu_display">
+            <button ng-click="addTextField(x)" class="edit"><i style="font-size:16px" class="fas fa-paragraph"></i></button>
+            <button ng-click="test(x)" class="edit"><i style="font-size:16px" class="fas fa-image"></i></button>
+          </div>
+￼        </div>
+      </div>
+  </div>
+</div>
+
+<script src="https://code.angularjs.org/snapshot/angular.min.js"></script>
+<script src="https://code.angularjs.org/snapshot/angular-sanitize.js"></script>
+<script src="https://code.angularjs.org/snapshot/angular-resource.js"></script>
+<script src="main.js"></script>
