@@ -1,1 +1,3 @@
-# AngularJS-Front-End-Editor
+# AngularJS Front End Editor
+
+A front end text/blog editor utilizing AngularJS
